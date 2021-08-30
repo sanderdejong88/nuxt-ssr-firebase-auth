@@ -57,8 +57,6 @@ export const actions = {
   onAuthStateChangedAction({ commit }, { authUser }) {
     console.log('onAuthStateChangedAction');
     if (!authUser) {
-      // claims = null
-      // Perform logout operations
       commit('SET_USER', undefined);
       return;
     }

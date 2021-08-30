@@ -10,7 +10,7 @@ export default Vue.extend({
   layout: 'login',
   methods: {
     ...mapActions({
-      loginAction: 'user/login',
+      loginAction: 'auth/login',
     }),
     async login() {
       await this.loginAction()

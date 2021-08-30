@@ -19,7 +19,7 @@ export default Vue.extend({
   middleware: ['authenticated'],
   methods: {
     ...mapActions({
-      logoutAction: 'user/logout',
+      logoutAction: 'auth/logout',
     }),
     async logout() {
       await this.logoutAction()
